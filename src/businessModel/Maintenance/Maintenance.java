@@ -1,4 +1,4 @@
-public class Maintenince extends Facility {
+public interface Maintenance{
 
     //InspectionRequest Method
 

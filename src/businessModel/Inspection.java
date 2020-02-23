@@ -1,6 +1,9 @@
-public class Inspection extends Facility {
-    public String InspectionType;
+import java.util.*;
 
+public class Inspection {
+    public List<> Inspections;
+
+    public Object listInspections(){}
     //Inspection Methods
 
 }
