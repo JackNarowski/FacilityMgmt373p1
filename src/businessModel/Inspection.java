@@ -1,4 +1,4 @@
-public class Inspection extends Facility {
+public class Inspection {
     public String InspectionType;
 
     //Inspection Methods

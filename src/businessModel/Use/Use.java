@@ -1,4 +1,4 @@
-public class Use extends Facility {
+public class Use {
 
     //Facility User
 
