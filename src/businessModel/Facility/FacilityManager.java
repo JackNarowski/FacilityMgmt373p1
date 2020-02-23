@@ -7,7 +7,7 @@ public class FacilityManager{
      return Facilities;
  }
 
- public Facility addNewFacility();
+ public void addNewFacility();
  public void removeFacility(Facility f);
 
 
