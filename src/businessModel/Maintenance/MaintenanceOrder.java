@@ -1,11 +1,13 @@
 package businessModel.Maintenance;
 
-public class MaintenanceOrder implements Maintenance {
-    public Request r;
+import java.util.ArrayList;
+
+public class MaintenanceOrder extends Requests {
+    public Requests r;
     public Schedule s;
     //Get cost method
-    public void makeFacilityMainRequest(Request r){}
-    public ArrayList<Request> listMainRequests(){
+    public void makeFacilityMainRequest(Requests r){}
+    public ArrayList<Requests> listMainRequests(){
     }
     //Cost attribute
 }

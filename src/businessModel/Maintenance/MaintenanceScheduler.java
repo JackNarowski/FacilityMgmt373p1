@@ -2,7 +2,7 @@ package businessModel.Maintenance;
 
 import java.util.ArrayList;
 
-public class MaintenanceScheduler implements Maintenance {
+public class MaintenanceScheduler extends Schedule {
      public Object schedule;
 
      public void scheduleMaitenance(){}
