@@ -1,3 +1,5 @@
+package dal;
+import businessModel.Use.*;
 import java.util.*;
 
 public class ScheduleDAO{

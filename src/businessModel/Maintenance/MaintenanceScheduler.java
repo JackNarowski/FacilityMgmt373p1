@@ -1,4 +1,5 @@
-public class MaintenanceScheduler extends Maintenance {
+package businessModel.Maintenance;
+public class MaintenanceScheduler implements Maintenance {
 
     // Maint Log
 

@@ -1,3 +1,5 @@
+package businessModel.Use;
+
 public class Use {
 
     //Facility User

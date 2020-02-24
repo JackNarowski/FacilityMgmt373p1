@@ -1,3 +1,4 @@
+package businessModel.Facility;
 import java.util.*;
 
 public interface Facility {
