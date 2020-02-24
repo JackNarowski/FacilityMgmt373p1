@@ -1,27 +1,29 @@
+import businessModel.Use.Use;
+
 public class UseTest {
-    public Object vacateFacilityTest(){
+    public boolean vacateFacilityTest(){
         //SetUp
         //vacateFacility();
         //Test output
     }
-    public Object calcUsageRateTest(){
+    public boolean calcUsageRateTest(){
         //SetUp
         //calcUsageRate();
         //Test output
 
     }
-    public Object requestAvailableCapacityTest(){
+    public boolean requestAvailableCapacityTest(){
         //Setup
         //requestAvailableCapacity();
         //Test output
 
     }
-    public void addFacilityDetailTest() {
+    public boolean addFacilityDetailTest() {
         //Setup
         //addFacilityDetail
         //Test output
     }
-    public Object getFacilityInformationTest() {
+    public boolean getFacilityInformationTest() {
         //Setup
         //getFacilityInformation();
         //Test output
