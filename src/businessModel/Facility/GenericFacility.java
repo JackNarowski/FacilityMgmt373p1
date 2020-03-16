@@ -7,13 +7,11 @@ public class GenericFacility implements Facility{
 
 	@Override
 	public void setName(String n) {
-		// TODO Auto-generated method stub
 		name = n;
 	}
 
 	@Override
 	public String getName() {
-		// TODO Auto-generated method stub
 		return name;
 	}
 

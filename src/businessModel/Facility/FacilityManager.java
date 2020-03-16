@@ -2,14 +2,20 @@ package businessModel.Facility;
 import java.util.*;
 
 public class FacilityManager{
-  private ArrayList<> Facilities;
+  private ArrayList<Facility> facilities;
 
  public ArrayList<Facility> listFacilities(){ //accessor method for Facilities arraylist
-     return Facilities;
+     return facilities;
  }
 
- public void addNewFacility();
- public void removeFacility(Facility f);
+ public void addNewFacility(Facility f) {
+	 facilities.add(f);
+	 System.out.println("Added successfully");
+ }
+ public void removeFacility(Facility f) {
+	 facilities.remove(f);	 
+ }
+ 
 
 
 }
