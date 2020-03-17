@@ -3,14 +3,10 @@ package businessModel.Maintenance;
 public class Schedule implements Maintenance {
     public Requests request;
     public Schedule schedule;
-
-    public String getRequestName(){}
-    public double timeStart(){}
-    public double timeStop(){}
     
     
     public Schedule(int startTime, int endTime) {
-    	if(validTime(startTime) & validTime(endTime)){}
+    	if(validTime(startTime) & validTime(endTime)){} // TODO idk what we're gonna do here
     	
     
     } //constructor 
