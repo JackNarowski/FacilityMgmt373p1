@@ -1,7 +1,8 @@
 package businessModel.Facility;
+import dal.FacilityDAO;
 import java.util.*;
 
-public class FacilityManager{
+public class FacilityManager implements FacilityDAO{ //had it implement Data Access Object so we are using the DAL
   private ArrayList<Facility> facilities;
   
   public FacilityManager() {
@@ -19,6 +20,7 @@ public class FacilityManager{
  }
  public void removeFacility(Facility f) {
 	 facilities.remove(f);	 
+	 System.out.println("Removed successfully");
  }
  
 
