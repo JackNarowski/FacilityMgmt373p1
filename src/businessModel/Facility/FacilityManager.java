@@ -1,8 +1,7 @@
 package businessModel.Facility;
-import dal.FacilityDAO;
 import java.util.*;
 
-public class FacilityManager implements FacilityDAO{ //had it implement Data Access Object so we are using the DAL
+public class FacilityManager{ 
   private ArrayList<Facility> facilities;
   
   public FacilityManager() {
