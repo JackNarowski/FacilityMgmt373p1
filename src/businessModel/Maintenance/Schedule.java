@@ -1,7 +1,6 @@
 package businessModel.Maintenance;
 
 public class Schedule{
-    public Requests request;
     public Schedule schedule;
     public int startTime;
     public int endTime;
@@ -11,7 +10,7 @@ public class Schedule{
     		this.startTime = startTime;
     		this.endTime = endTime;
     		
-    	} // TODO idk what we're gonna do here
+    	} 
     
     
     } //constructor 
