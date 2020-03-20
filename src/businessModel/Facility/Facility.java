@@ -1,9 +1,7 @@
 package businessModel.Facility;
-import businessModel.*;
-import businessModel.Maintenance.Maintenance;
-import businessModel.Use.Use;
 
-import java.util.*;
+//import businessModel.*;
+
 
 public interface Facility {
        /* String name;
@@ -12,8 +10,10 @@ public interface Facility {
         Inspection i;
         Use use; */
         
-        public void setName(String n);
-        public String getName();
+        public void setId(int id );
+        public int getId();
+        //public void setRequestList(RequestList<Requests> r); //might add this in and then put requests and schedule into it 
+    // TODO i cant get this to work lol
         
         
         

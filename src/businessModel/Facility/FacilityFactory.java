@@ -1,10 +1,10 @@
 package businessModel.Facility;
-import java.util.*;
+//import java.util.*;
 
 public class FacilityFactory{
-    public Facility buildFacility(Facility f, String name){
+    public Facility buildFacility(Facility f, int id){
     	f = new GenericFacility();
-    	f.setName(name);
+    	f.setId(id);
     	return f;
     }
     

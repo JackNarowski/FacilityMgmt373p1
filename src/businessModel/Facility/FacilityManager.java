@@ -3,6 +3,11 @@ import java.util.*;
 
 public class FacilityManager{
   private ArrayList<Facility> facilities;
+  
+  public FacilityManager() {
+	  facilities = new ArrayList<Facility>(); //first thing we'll need to have. it contains all the facilities 
+	  
+  }
 
  public ArrayList<Facility> listFacilities(){ //accessor method for Facilities arraylist
      return facilities;
