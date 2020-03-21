@@ -9,7 +9,7 @@ public class Requests implements Maintenance {
     	
     }//setId
     
-    private int getRequestId() {
+    public int getRequestId() {
     	return id;
     	
     }//getId

@@ -1,10 +1,10 @@
 package dal;
-import java.util.*;
 import businessModel.Facility.*;
-public class FacilityDAO{
+public interface FacilityDAO{
+	 
 
-    public void setFacility(Facility fac); //add SQL add
-    public void removeFacility(Facility fac); //add SQL remove
-    public Facility getFacility(); // add SQL get
-
+	 public void addNewFacility(Facility f);
+	 public void removeFacility(Facility f);
+	 public void getFacility(int id);
+	 
 }
