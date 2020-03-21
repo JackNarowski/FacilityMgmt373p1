@@ -11,6 +11,6 @@ public interface Maintenance{
 	    	
 	    
 	    public void createSchedule(int startTime, int endTime);
-	    public Schedule getSchedule();
+	    public String getSchedule();
 
 }

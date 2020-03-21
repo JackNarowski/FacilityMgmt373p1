@@ -4,7 +4,7 @@ public class Requests implements Maintenance {
     public int id;
     public Schedule s;
 
-    public void setRequestId(int id){
+    public Requests(int id){ //setting id in constructor
     	this.id = id;
     	
     }//setId
@@ -17,8 +17,8 @@ public class Requests implements Maintenance {
     public void createSchedule(int startTime, int endTime) {
     	s = new Schedule(startTime, endTime);
     }
-    public Schedule getSchedule() {
-    	return s;
+    public String getSchedule() {
+    	return "Request " + id + " is scheduled from " + s.getStartTime() + " to " + s.getEndTime();
     } 
     
 }

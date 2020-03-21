@@ -26,8 +26,8 @@ public class Inspection implements Maintenance {
 	}
 
 	@Override
-	public Schedule getSchedule() {
-		return s;
+	public String getSchedule() {
+    	return "Request " + id + " is scheduled from " + s.getStartTime() + " to " + s.getEndTime();
 	}
     //
 
