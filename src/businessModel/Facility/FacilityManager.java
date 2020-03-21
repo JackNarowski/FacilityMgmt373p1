@@ -15,11 +15,11 @@ public class FacilityManager{
 
  public void addNewFacility(Facility f) {
 	 facilities.add(f);
-	 System.out.println("Added successfully");
+	// System.out.println("Added successfully"); moving to client
  }
  public void removeFacility(Facility f) {
 	 facilities.remove(f);	 
-	 System.out.println("Removed successfully");
+	 //System.out.println("Removed successfully"); also moving to client
  }
  
 
