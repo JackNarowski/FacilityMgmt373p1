@@ -2,7 +2,9 @@ package businessModel.Facility;
 //import java.util.*;
 
 public class FacilityFactory{
-    public Facility buildFacility(Facility f, int id){
+	static Facility f;
+    public static Facility buildFacility(int id){
+    	//here we're going to have an ability for flexability if more facility types are added
     	f = new GenericFacility();
     	f.setId(id);
     	return f;
