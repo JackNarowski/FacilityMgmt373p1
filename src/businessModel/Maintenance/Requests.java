@@ -4,7 +4,7 @@ public class Requests implements Maintenance {
     public int id;
     public Schedule s;
 
-    public Requests(int id, int FacId){ //setting id in constructor
+    public Requests(int id){ //setting id in constructor
     	this.id = id;
     	
     }//setId
