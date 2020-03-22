@@ -21,6 +21,48 @@ public class FacilityManageClient {
 			
 		}
 		
+		System.out.println("_________________________________________________________________________________________________\n");
+		//printing out inspections requested 
+		
+		Inspection i1 = new Inspection(1);
+	
+		fac1.getMaintManag().addNewInspection(i1);
+		
+		System.out.println("Inspection requested");
+		System.out.println("Inspection ID: " + i1.getInspectionId());
+		
+		Inspection i2 = new Inspection(2);
+		
+		fac1.getMaintManag().addNewInspection(i2);
+		System.out.println(" ");
+		System.out.println("Inspection requested");
+		System.out.println("Inspection ID: " + i2.getInspectionId());
+		System.out.println(" ");
+		
+		//printing out problem requested 
+		
+		Problem p1 = new Problem("pipe in facility 1 had broken");
+		fac1.getProbManag().addProblem(p1);
+		System.out.println("Problem detected: " + p1.getProbDesc());
+		
+		//printing out request to fix 
+		System.out.println("_________________________________________________________________________________________________\n");
+		Requests r1 = new Requests(1);
+		r1.scheduleMaintenance(1200, 1300);
+		fac1.getMaintManag().makeFacilityMaintRequest(r1);
+		System.out.println("Maintenance request created: ");
+		System.out.println("Request ID: " + r1.getRequestId());
+		System.out.println(r1.getSchedule());
+		System.out.println("Downtime requested: " + r1.calcDownTimeForFacility() + " minutes");
+		System.out.println(" ");
+		System.out.println("Problems: ");
+		fac1.getProbManag().listFacilityProblems();
+		System.out.println(" ");
+
+		System.out.println("Cost for facility " + fac1.getFacilityInformation() + ": $" + fac1.getProbManag().calcMaintenanceCostForFacility());
+		
+		
+		
 		//I'm basing this off of the client from the Bookstore Lab we did before.
 		
     	
