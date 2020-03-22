@@ -18,6 +18,7 @@ public class UseSchedule{
 
     public int getUseStartTime() {return startTime;}
     public int getUseEndTime() {return endTime;}
+    public String getUse() {return use;}
 
     private boolean validUseTime(int time) {
         boolean scheduleConfirmed;
