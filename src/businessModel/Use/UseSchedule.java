@@ -6,11 +6,13 @@ public class UseSchedule{
     public UseSchedule useschedule;
     public int startTime;
     public int endTime;
+    public String use;
 
-    public UseSchedule(int startTime, int endTime) {
+    public UseSchedule(int startTime, int endTime, String use) {
         if(validTime(startTime) & validTime(endTime)){
             this.startTime = startTime;
             this.endTime = endTime;
+            this.use = use;
         }
     } //constructor
 
@@ -28,6 +30,5 @@ public class UseSchedule{
             scheduleConfirmed = true;
         }
         return scheduleConfirmed;
-
     }
 }
