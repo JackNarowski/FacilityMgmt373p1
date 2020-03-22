@@ -22,10 +22,10 @@ public class Use {
         return "Request " + id + "With use " + s.getUse() +" is scheduled from " + s.getUseStartTime() + " to " + s.getUseEndTime();
     }
     public int getStartTime(){
-        return s.getUseStartTime;
+        return s.getUseStartTime();
     }
     public int getEndTime(){
-        return s.getUseEndTime;
+        return s.getUseEndTime();
     }
 
 

@@ -9,7 +9,6 @@ class FacilityTest {
 
 	@Test
 	void testFacilityCreation() {
-		FacilityFactory ffac = new FacilityFactory();
 		
 		Facility fac1 = FacilityFactory.addNewFacility(1);
 		Facility fac2 = FacilityFactory.addNewFacilityDetail(2, "Cool Facility");

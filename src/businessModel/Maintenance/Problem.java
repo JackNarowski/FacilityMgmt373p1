@@ -21,5 +21,9 @@ public class Problem {
 		
 	}
 	
+	public void resolve(){
+		problem = false;
+	}
+	
 
 }
