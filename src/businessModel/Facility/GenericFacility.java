@@ -12,7 +12,7 @@ public class GenericFacility implements Facility{
 	}
 
 	@Override
-	public int getId() {
+	public int getFacilityInformation() {
 		return id;
 	}
 
