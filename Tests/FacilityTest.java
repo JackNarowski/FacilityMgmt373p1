@@ -9,20 +9,22 @@ class FacilityTest {
 
 	@Test
 	void testFacilityCreation() {
-		Facility fac1 = FacilityFactory.addNewFacilityDetail(1);
-		Facility fac2 = FacilityFactory.addNewFacilityDetail(2);
+		Facility fac1 = FacilityFactory.addNewFacility(1);
+		Facility fac2 = FacilityFactory.addNewFacilityDetail(2, "Cool Facility");
 		
 		assertEquals(1, fac1.getFacilityInformation());
 		assertEquals(2, fac2.getFacilityInformation());
+		assertEquals("No description provided", fac1.getDescription());
+		assertEquals("Cool Facility", fac2.getDescription());
 		
 		//fail("Not yet implemented");
 	}
 	@Test
 	void testFacilityManager() {
 		FacilityManager fmanager = new FacilityManager();
-		Facility fac1 = FacilityFactory.addNewFacilityDetail(1);
-		Facility fac2 = FacilityFactory.addNewFacilityDetail(2);
-		Facility fac3 = FacilityFactory.addNewFacilityDetail(3);
+		Facility fac1 = FacilityFactory.addNewFacilityDetail(1, "Storage Facility");
+		Facility fac2 = FacilityFactory.addNewFacility(2);
+		Facility fac3 = FacilityFactory.addNewFacilityDetail(3, "Cool Facility");
 
 		
 		fmanager.addNewFacility(fac1);

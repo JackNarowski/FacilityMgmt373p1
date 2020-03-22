@@ -18,8 +18,20 @@ public class MaintenanceManager{
 	 public ArrayList<Inspection> listInspections(){
 		return inspections;
 		}
+	 
+	 public void listMaintenance() {
+		 System.out.println("Requests: ");
+		 for(Requests r:requests){
+			 System.out.print(r + ", ");
+		 }
+		 System.out.println("\n Inspections: ");
+		 
+		 for(Inspection i: inspections) {
+			 System.out.print(i + ", ");
+		 }
+	 }
 
-	 public void addNewRequest(Requests r) {
+	 public void makeFacilityMaintRequest(Requests r) {
 		 requests.add(r);
 		// System.out.println("Added successfully"); moving to client
 	 }

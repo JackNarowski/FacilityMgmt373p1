@@ -7,16 +7,22 @@ public class FacilityManageClient {
     public static void main (String args[]) throws Exception{
     	FacilityManager fmanager = new FacilityManager();
     	
-    	//FacilityFactory factory = new FacilityFactory();
-    	
-    	Facility fac1 = FacilityFactory.buildFacility(001);
+    	Facility fac1 = FacilityFactory.addNewFacility(1);
     	fmanager.addNewFacility(fac1);
-    	
-    	System.out.print(fac1.getId() + " "); //it works! delete later
-    	
-    	Requests req1 = new Requests(001);
-    	req1.createSchedule(1200, 1300); //request from 12 to 1pm
-    	System.out.print(req1.getSchedule());
+		Facility fac2 = FacilityFactory.addNewFacilityDetail(2, "A storage facility");
+		fmanager.addNewFacility(fac2);
+		
+		
+		
+		/* PRINTING OUT A CLIENT*/
+		System.out.println("Here are the facilities we have available:");
+		for(Facility f: fmanager.listFacilities()){
+			System.out.println(f.getFacilityInformation() + " "+ f.getDescription() + ", ");
+			
+		}
+		
+		//I'm basing this off of the client from the Bookstore Lab we did before.
+		
     	
     	
     }

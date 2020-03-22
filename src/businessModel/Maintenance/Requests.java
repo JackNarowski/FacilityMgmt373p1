@@ -4,7 +4,7 @@ public class Requests implements Maintenance {
     public int id;
     public Schedule s;
 
-    public Requests(int id){ //setting id in constructor
+    public Requests(int id, int FacId){ //setting id in constructor
     	this.id = id;
     	
     }//setId
@@ -14,11 +14,17 @@ public class Requests implements Maintenance {
     	
     }//getId
     
+
+    
     public void scheduleMaintenance(int startTime, int endTime) {
     	s = new Schedule(startTime, endTime);
     }
     public String getSchedule() {
     	return "Request " + id + " is scheduled from " + s.getStartTime() + " to " + s.getEndTime();
     } 
+    
+    public int calcDownTimeForFacility() {
+    	return (s.getEndTime() - s.getStartTime()) / 4;
+    }
     
 }
