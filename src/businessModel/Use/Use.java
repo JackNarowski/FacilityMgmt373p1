@@ -16,7 +16,7 @@ public class Use {
     }//getId
 
     public void UseSchedule(int startTime, int endTime, String use) {
-        s = new Schedule(startTime, endTime, use);
+        s = new UseSchedule(startTime, endTime, use);
     }
     public String getSchedule() {
         return "Request " + id + "With use " + s.getUse() +" is scheduled from " + s.getStartTime() + " to " + s.getEndTime();
