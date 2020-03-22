@@ -19,7 +19,7 @@ public class Inspection implements Maintenance {
 	
 	@Override
 
-	public void createSchedule(int startTime, int endTime) {
+	public void scheduleMaintenance(int startTime, int endTime) {
 		
 	    	s = new Schedule(startTime, endTime);    
 		

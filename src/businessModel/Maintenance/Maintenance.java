@@ -10,7 +10,7 @@ public interface Maintenance{
     //MainteinanceScheduler extends this
 	    	
 	    
-	    public void createSchedule(int startTime, int endTime);
+	    public void scheduleMaintenance(int startTime, int endTime);
 	    public String getSchedule();
 
 }

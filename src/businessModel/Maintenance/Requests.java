@@ -14,7 +14,7 @@ public class Requests implements Maintenance {
     	
     }//getId
     
-    public void createSchedule(int startTime, int endTime) {
+    public void scheduleMaintenance(int startTime, int endTime) {
     	s = new Schedule(startTime, endTime);
     }
     public String getSchedule() {
