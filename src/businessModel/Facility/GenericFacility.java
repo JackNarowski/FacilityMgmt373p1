@@ -5,6 +5,7 @@ package businessModel.Facility;
 
 public class GenericFacility implements Facility{
 	int id;
+	String d = "No description provided";
 
 	@Override
 	public void setId(int i) {
@@ -14,6 +15,17 @@ public class GenericFacility implements Facility{
 	@Override
 	public int getFacilityInformation() {
 		return id;
+	}
+
+	@Override
+	public void setDescription(String d) {
+		this.d = d;
+		
+	}
+
+	@Override
+	public String getDescription() {
+		return d;
 	}
 
 	}
