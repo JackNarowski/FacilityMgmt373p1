@@ -27,20 +27,22 @@ public class UseManager{
 
     public boolean isInUseDuringInterval(int startTime, int endTime){
         for (Use use : Uses) {
-            if (use.getStartTime < startTime && use.getEndTime > startTime)
-                return true;
-            if (use.getStartTime>startTime && use.getStartTime < endTime)
-                return true;
-            else return false;
+            if (use.getStartTime() < startTime && use.getEndTime() > startTime){
+            	return true;}
+            if (use.getStartTime()>startTime && use.getStartTime() < endTime){
+            	return true;
+            }else {
+            	return false;}
         }
     }
-
+    
     public double calcUsageRate(){
-        totaltime = 0;
+        double totaltime = 0;
         for (Use use : Uses) {
-            usetime = use.getEndTime - use.getStartTime;
+            double usetime = use.getEndTime() - use.getStartTime();
             totaltime += usetime;
         }
+        return totaltime;
     }
 
 }
