@@ -9,7 +9,7 @@ public class Inspection implements Maintenance {
 	//an inspection AND a request manager
 //also inspection is identical as request with the exception of changing the setter/getter names
 	
-	public void setInspectionId(int id) {
+	public Inspection(int id) {
 		this.id = id;
 		
 	}
