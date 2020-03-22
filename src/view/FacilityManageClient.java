@@ -61,6 +61,19 @@ public class FacilityManageClient {
 
 		System.out.println("Cost for facility " + fac1.getFacilityInformation() + ": $" + fac1.getProbManag().calcMaintenanceCostForFacility());
 		
+		System.out.println(" ");
+		System.out.println("_________________________________________________________________________________________________\n");
+		
+		Use u1 = new Use(23451);
+		u1.UseSchedule(1400, 1500, "23451");
+		UseManager umang = new UseManager();
+		umang.addNewUse(u1);
+		umang.setCapacity(100);
+		
+		System.out.println(" ");
+		System.out.println("Use facility for event: " + u1.getUseId());
+		System.out.println("From " + u1.getSchedule());
+		System.out.println("Capacity at: " + umang.requestAvailableCapacity() + " people");
 		
 		
 		//I'm basing this off of the client from the Bookstore Lab we did before.
