@@ -1,25 +1,31 @@
 package businessModel.Use;
 
 public class Use {
+    public int id;
+    public UseSchedule s;
 
-    //Facility User
-    public int capcaity; //how many people can be inside the facility at once
-    public Object UseSchedule;
+    public Use(int id){ //setting id in constructor
+        this.id = id;
 
-    private void vacateFacility(){capcaity = 0;}
-    public void setCapacity(int c) {capcaity = c;}
-    public Object calcUsageRate(){ 
-    	// TODO what kind of formula to make?
-    	
+    }//setId
+
+    public int getUseId() {
+        return id;
+
+    }//getId
+
+    public void UseSchedule(int startTime, int endTime, String use) {
+        s = new Schedule(startTime, endTime, use);
     }
-    public int requestAvailableCapacity(){return capcaity;}
-    public void addFacilityDetail(){
-    	
-    	// TODO what kind of information to add in detail??
+    public String getSchedule() {
+        return "Request " + id + "With use " + s.getUse() +" is scheduled from " + s.getStartTime() + " to " + s.getEndTime();
     }
-    public Object getFacilityInformation(){
-    	// TODO might move this to the Facility class 
+    public int getStartTime(){
+        return s.getUseStartTime;
     }
-    //UseSchedule Subclass
+    public int getEndTime(){
+        return s.getUseEndTime;
+    }
+
 
 }

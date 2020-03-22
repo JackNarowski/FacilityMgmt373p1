@@ -6,16 +6,19 @@ public class UseSchedule{
     public UseSchedule useschedule;
     public int startTime;
     public int endTime;
+    public String use;
 
-    public UseSchedule(int startTime, int endTime) {
+    public UseSchedule(int startTime, int endTime, String use) {
         if(validTime(startTime) & validTime(endTime)){
             this.startTime = startTime;
             this.endTime = endTime;
+            this.use = use;
         }
     } //constructor
 
     public int getUseStartTime() {return startTime;}
     public int getUseEndTime() {return endTime;}
+    public String getUse() {return use;}
 
     private boolean validUseTime(int time) {
         boolean scheduleConfirmed;
@@ -28,6 +31,5 @@ public class UseSchedule{
             scheduleConfirmed = true;
         }
         return scheduleConfirmed;
-
     }
 }
