@@ -8,7 +8,6 @@ public class Inspection implements Maintenance {
 	//and then it can fit the maintenance format and we can have
 	//an inspection AND a request manager
 //also inspection is identical as request with the exception of changing the setter/getter names
-	//also dont know what to do with maintenanceorder or scheduler yet lmfaooo we can delete them as long as we keep the methods we need
 	
 	public void setInspectionId(int id) {
 		this.id = id;

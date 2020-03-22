@@ -3,8 +3,9 @@ package businessModel.Maintenance;
 public class Requests implements Maintenance {
     public int id;
     public Schedule s;
+    public int FacId;
 
-    public Requests(int id){ //setting id in constructor
+    public Requests(int id, int FacId){ //setting id in constructor
     	this.id = id;
     	
     }//setId
@@ -13,6 +14,10 @@ public class Requests implements Maintenance {
     	return id;
     	
     }//getId
+    
+    public int calcMaintenanceCostForFacility(){
+    	
+    } 
     
     public void scheduleMaintenance(int startTime, int endTime) {
     	s = new Schedule(startTime, endTime);
