@@ -15,8 +15,14 @@ public class UseManager{
         Uses = new ArrayList<Use>();
     }
 
-    public void assignFacilityToUse() {
-        UseSchedule( int startTime, int endTime, String Use);
+    public void addNewUse(Use u) {
+        Uses.add(u);
+        // System.out.println("Added successfully"); moving to client          
+    }
+
+    public void removeUse(Use u) {
+        Uses.remove(u);
+        //System.out.println("Removed successfully"); also moving to client
     }
 
     public boolean isInUseDuringInterval(int startTime, int endTime){
