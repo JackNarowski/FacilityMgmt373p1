@@ -10,11 +10,11 @@ public class GenericFacility implements Facility{
 	String d = "No description provided";
 	MaintenanceManager mmang;
 	ProblemManager pmang;
-	
+	UseManager umang;
 	public GenericFacility(){ //setting a way to store all the facility's requests, inspections, problems, use, etc
 		mmang = new MaintenanceManager();
 		pmang = new ProblemManager();
-		
+		umang = new UseManager();
 	}
 
 	@Override
@@ -46,4 +46,5 @@ public class GenericFacility implements Facility{
 		return pmang;
 	}
 
-	}
+	public UseManager getUmang() { return umang; }
+}
