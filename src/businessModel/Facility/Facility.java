@@ -10,8 +10,10 @@ public interface Facility {
         Inspection i;
         Use use; */
         
-        public void setId(int id );
-        public int getId();
+        public void setId(int id);
+        public int getFacilityInformation();
+        
+        
         //public void setRequestList(RequestList<Requests> r); //might add this in and then put requests and schedule into it 
     // TODO i cant get this to work lol
         
