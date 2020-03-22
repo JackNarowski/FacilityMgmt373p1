@@ -1,4 +1,5 @@
 package businessModel.Use;
+//import businessModel.Maintenance.Schedule; use this to use schedule in ur class
 
 public class Use {
     public int id;
