@@ -10,7 +10,7 @@ public class FacilityManager{
   }
 
  public ArrayList<Facility> listFacilities(){ //accessor method for Facilities arraylist
-     return facilities;
+	 return facilities;
  }
 
  public void addNewFacility(Facility f) {
